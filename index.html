@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Boom Baloon</title>
+	
+	<link rel="stylesheet" href="style.css">
+
+	<script language="JavaScript">
+		function iniciajogo(){
+			var nivel_jogo = document.getElementById('nivel_jogo').value;
+			window.location.href = 'jogo.html?'+nivel_jogo
+		}
+	</script>
+</head>
+<body>
+	
+	<div id="main">		
+		<h1 id="tittle">Boom Baloon</h1>
+		<div>
+			<select id="nivel_jogo">
+				<option value="1">Fácil</option>
+				<option value="2">Médio</option>
+				<option value="3">Difícil</option>
+			</select>
+		</div>
+		<div class="imgplay">
+			<img src="imagens/iniciar.png" onclick="iniciajogo()">
+		</div>
+	</div>
+	
+
+</body>
+</html>
